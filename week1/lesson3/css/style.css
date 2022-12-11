@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.slider {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.slick-dots li button:before{
+  height: 50px;
+  width: 50px;
+}

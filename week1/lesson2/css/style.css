@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.images-1 {
+  transition: all 2s ease 0s;
+}
+
+.images-1:hover {
+  transform: translateY(-100px);
+}
+
+.arrow {
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px
+}
+
+.box {
+  border: 2px solid #000;
+  background-color: #ccc;
+  height: 500px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.text {
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-1 {
+  font-size: 50px;
+  margin: 25px 0 50px;
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.title-1::before,
+.title-1::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.title-1::after {
+  right: 0;
+}
+
+.title-1::before {
+  left: 0;
+}
+
+/* .title-1:hover {
+  color: blue;
+  text-decoration: underline;
+} */
+
+.text-1 {
+  /* width: 500px;
+  height: 500px; */
+  font-size: 20px;
+  background-color: #ccc;
+  /* padding: 50px;
+  border: 20px solid black;
+  overflow: hidden; */
+}
+
+.text-1:hover {
+  background-color: black;
+  color: white;
+}
+
+.title-2 {
+  padding-top: 100px;
+}
+
+.text-2 {
+  font-size: 18px;
+  background-color: #ccc;
+}
+
+.text-3 {
+  font-style: italic;
+}
+
+.text-4 {
+  text-align: right;
+  font-size: 14px;
+}
