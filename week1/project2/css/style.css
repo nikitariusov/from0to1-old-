@@ -22,11 +22,14 @@ body {
   background-position: center;
 }
 
+.header {
+  margin-bottom: 120px;
+}
+
 .menu {
   display: flex;
   align-items: flex-end;
   padding-top: 46px;
-  margin-bottom: 240px;
 }
 
 .logo {
