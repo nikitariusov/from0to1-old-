@@ -177,13 +177,13 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 .header__icon {
-  padding-bottom: 95px;
+  padding-bottom: 50px;
   transition: all 0.5s;
 }
 
 .header__icon:hover {
   padding-top: 15px;
-  padding-bottom: 80px;
+  padding-bottom: 35px;
 }
 
 .about {
@@ -244,6 +244,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 .school__item {
   height: 140px;
   max-width: 350px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,7 +278,6 @@ font-family: 'Roboto Condensed', sans-serif; */
   top: 0;
 }
 
-
 .item__title--leave::before {
   background-image: url(../images/leave-icon.svg);
 }
@@ -287,4 +287,40 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 .item__title--learn::before {
   background-image: url(../images/learning-icon.svg);
+}
+
+.school__info-text {
+  flex-basis: 600px;
+}
+
+.school__info-text p:first-child {
+  margin-bottom: 30px;
+}
+
+.school__info {
+  width: 345px;
+  margin-right: 255px;
+}
+
+.school__info-item {
+  height: 43px;
+  padding-top: 8px;
+  padding-right: 50px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.info__img-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-item__img {
+  margin-bottom: 1px;
+  margin-right: 10px;
+} 
+
+.info__img-line span{
+  font-size: 24px;
+  line-height: 18px;
 }
