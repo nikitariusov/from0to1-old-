@@ -410,6 +410,23 @@ font-family: 'Roboto Condensed', sans-serif; */
   gap: 40px;
 }
 
+.gallery__content-item {
+  position: relative;
+}
+
+.gallery__content-item-decor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .4s;
+}
+
+.gallery__content-item-decor:hover {
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
 .gallery__link-btn {
   width: 350px;
   height: 50px;
