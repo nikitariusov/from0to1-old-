@@ -399,6 +399,10 @@ font-family: 'Roboto Condensed', sans-serif; */
   gap: 20px;
 }
 
+.mixitup-control-active {
+  color: #00B2A0;
+}
+
 .gallery__content {
   margin: 0 auto 50px;
   display: flex;

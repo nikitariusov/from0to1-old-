@@ -265,28 +265,28 @@
             ГАЛЕРЕЯ
           </h2>
           <div class="gallery__filter">
-            <button class="button gallery__btn">ВСЕ</button>
-            <button class="button gallery__btn">ТУРИСТЫ</button>
-            <button class="button gallery__btn">ПРИРОДА</button>
-            <button class="button gallery__btn">ПРОФИ</button>
+            <button class="button gallery__btn" data-filter="all">ВСЕ</button>
+            <button class="button gallery__btn" data-filter=".category-a">ТУРИСТЫ</button>
+            <button class="button gallery__btn" data-filter=".category-b">ПРИРОДА</button>
+            <button class="button gallery__btn" data-filter=".category-c">ПРОФИ</button>
           </div>
           <div class="gallery__content">
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-b category-c">
               <img class="gallery__img" src="./images/gallery/1.jpg" alt="image">
             </div>
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-a">
               <img class="gallery__img" src="./images/gallery/2.jpg" alt="image">
             </div>
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-c">
               <img class="gallery__img" src="./images/gallery/3.jpg" alt="image">
             </div>
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-a">
               <img class="gallery__img" src="./images/gallery/4.jpg" alt="image">
             </div>
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-b">
               <img class="gallery__img" src="./images/gallery/5.jpg" alt="image">
             </div>
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-a">
               <img class="gallery__img" src="./images/gallery/6.jpg" alt="image">
             </div>
           </div>
@@ -327,6 +327,7 @@
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
