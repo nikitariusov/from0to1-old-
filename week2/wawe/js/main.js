@@ -5,4 +5,9 @@ $(function() {
       enable: false
     }
   })
+
+  $('.blog__slider').slick({
+    arrows: false,
+    dots: true,
+  })
 })
