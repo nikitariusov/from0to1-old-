@@ -498,6 +498,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 .blog {
+  margin-bottom: 100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -571,6 +572,43 @@ ul[class="slick-dots"] {
 
 .slick-active button {
   background-color: #00B2A0;;
+}
+
+.team {
+}
+
+.team__inner {
+  height: 100vh;
+  padding-bottom: 200px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team__title {
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 105px;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__img {
+  margin-bottom: 25px;
+}
+
+.team__name {
+  margin-bottom: 5px;
 }
 
 /*? INFO */
