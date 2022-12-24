@@ -567,14 +567,11 @@ ul[class="slick-dots"] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .slick-active button {
-  background-color: #00B2A0;;
-}
-
-.team {
+  background-color: #00b2a0;
 }
 
 .team__inner {
@@ -585,9 +582,6 @@ ul[class="slick-dots"] {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-.team__title {
 }
 
 .team__items {
@@ -609,6 +603,78 @@ ul[class="slick-dots"] {
 
 .team__name {
   margin-bottom: 5px;
+}
+
+.pricing {
+  height: 100vh;
+  padding: 200px 0 200px;
+  background-color: #f8f8f8;
+}
+
+.pricing .container {
+  height: 100%;
+}
+
+.pricing__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing__title {
+  width: 380px;
+  margin: 0 auto 50px;
+}
+
+.pricing__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.pricing__item {
+  width: 360px;
+  height: 580px;
+  padding: 55px 43px 35px;
+  background-color: #fff;
+  position: relative;
+}
+
+.pricing__item li {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+li.pricing__item-name {
+  margin-bottom: 58px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353e;
+  text-align: center;
+}
+
+li.pricing__item-num {
+  margin: 0;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353e;
+}
+
+.pricing__item-num div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__item-num span {
+  font-size: 18px;
 }
 
 /*? INFO */
