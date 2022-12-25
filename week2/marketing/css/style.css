@@ -664,7 +664,7 @@ ul.pricing__item {
   font-weight: bold;
   font-size: 11px;
   line-height: 13px;
-  color: #FFF;
+  color: #fff;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -673,4 +673,68 @@ ul.pricing__item {
   background-color: #242121;
   cursor: pointer;
   margin-top: 40px;
+}
+
+.footer__top {
+  padding: 110px 10px 60px;
+  background-color: #333333;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer__logo {
+  display: inline-block;
+  padding: 0 35px 4px;
+  border-bottom: 2px solid #fcbb08;
+  margin-bottom: 70px;
+}
+
+ul.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.footer__social-list {
+  padding: 0 15px;
+}
+
+.footer__social-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__contact {
+  color: #fff;
+  font-size: 14px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.footer__contact a {
+  display: block;
+  margin: 10px 0;
+}
+
+.go-top {
+  display: inline-block;
+}
+
+.footer__copy {
+  padding: 40px 10px;
+  text-align: center;
+  background-color: #2a2c2b;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ccc;
 }
