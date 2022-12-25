@@ -618,3 +618,59 @@ ul.pricing__item {
   justify-content: space-between;
   align-items: center;
 }
+
+.feedback {
+  padding: 145px 0 160px;
+  background-image: url(../images/feedback-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right 65%;
+}
+
+.feedback__title {
+  margin-bottom: 80px;
+}
+
+.form {
+  max-width: 570px;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #373a39;
+  padding: 16px 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3.70909px;
+  color: #b8b8b8;
+  text-transform: uppercase;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.form button {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFF;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 17px 70px 15px;
+  border: none;
+  background-color: #242121;
+  cursor: pointer;
+  margin-top: 40px;
+}
