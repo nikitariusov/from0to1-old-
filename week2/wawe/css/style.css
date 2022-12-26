@@ -159,7 +159,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 .menu {
   margin-right: auto;
-  transform: translateX(-60px);
+  transform: translateX(-30px);
 }
 
 .menu__list {
@@ -777,6 +777,16 @@ li.pricing__item-num {
 
 .social__link:hover {
   color: #00B2A0;
+}
+
+.footer {
+  height: 200px;
+  padding: 68px 0;
+  background-color: #00B2A0;
+}
+
+.footer__logo {
+  margin: 0 auto;
 }
 
 /*? INFO */
