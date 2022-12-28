@@ -826,7 +826,15 @@ li.pricing__item-num {
     padding-top: 100px;
     padding-bottom: 20px;
     background-color: #0d302c;
+    transition: all .4s;
+  }
+
+  .menu__list {
     transform: translateY(-200%);
+  }
+
+  .menu__list--active {
+    transform: translateY(0);
   }
 
   .menu__list-item {
