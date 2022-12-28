@@ -804,6 +804,14 @@ li.pricing__item-num {
 }
 
 @media (max-width: 900px) {
+  .header__top-inner {
+    padding-top: 15px;
+  }
+
+  .header__content {
+    margin-top: 20px;
+  }
+
   .menu {
     transform: none;
   }
