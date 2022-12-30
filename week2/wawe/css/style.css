@@ -962,9 +962,14 @@ li.pricing__item-num {
 }
 
 @media (max-width: 550px) {
+  .header__title {
+    font-size: 90px;
+    line-height: 110px;
+  }
+
   .header__subtitle {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .about__title,
@@ -986,6 +991,11 @@ li.pricing__item-num {
   .header__title {
     font-size: 80px;
     line-height: 96px;
+  }
+
+  .header__subtitle {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .about,
