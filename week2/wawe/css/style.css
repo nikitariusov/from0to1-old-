@@ -793,7 +793,7 @@ li.pricing__item-num {
   margin: 0 auto;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1100px) {
   .menu {
     margin: 0;
   }
@@ -802,13 +802,40 @@ li.pricing__item-num {
     font-size: 160px;
   }
 
-  .about {
+  .about,
+  .school {
     padding: 100px 0 100px;
   }
 
   .title {
     font-size: 40px;
   }
+
+  .school__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .school__item {
+    margin-bottom: 100px;
+  }
+
+  .item__title {
+    height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .school__info {
+    margin-right: inherit;
+    flex-basis: 600px;
+    margin-bottom: 50px;
+  }
+
+  .info-item__img {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 900px) {
@@ -905,24 +932,22 @@ li.pricing__item-num {
     line-height: 26px;
   }
 
-  .about {
+  .about,
+  .school {
     padding: 70px 0 70px;
   }
 
 }
 
 @media (max-width: 550px) {
-  .header__title {
-    font-size: 60px;
-    line-height: 80px;
-  }
 
   .header__subtitle {
     font-size: 12px;
     line-height: 14px;
   }
 
-  .about__title {
+  .about__title,
+  .school__title {
     width: 240px;
   }
 
@@ -930,15 +955,21 @@ li.pricing__item-num {
     top: 80px;
     right: -20px;
   }
+
 }
 
 
 @media (max-width: 380px) {
+  .header__title {
+    font-size: 80px;
+    line-height: 96px;
+  }
+
   .about {
     padding: 40px 0 40px;
   }
 
-  .about__title {
+  .title {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 40px;
@@ -947,6 +978,15 @@ li.pricing__item-num {
   .about__title::before {
     top: 55px;
     right: 45px;
+  }
+
+  .school__title::before {
+    top: 25px;
+    right: 40px;
+  }
+
+  .item__title h4 {
+    font-size: 20px;
   }
 }
 
