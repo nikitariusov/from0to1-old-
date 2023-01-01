@@ -752,20 +752,45 @@ ul.footer__social {
   .magic__inner {
     padding: 50px 0;
   }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slider-blog__item {
+    padding: 120px 60px;
+  }
+
+  ul.slick-dots {
+    margin-left: 60px;
+  }
 }
+
+
 
 @media (max-width: 1200px) {
   .about__inner {
     display: block;
   }
 
-  .about__title {
+  .about__title,
+  .team__title,
+  .pricing__title,
+  .feedback__title {
     margin-bottom: 50px;
   }
 
   .about,
   .expertise,
-  .portfolio {
+  .portfolio,
+  .slider-blog,
+  .team,
+  .pricing,
+  .feedback {
     padding: 75px 0;
   }
 
@@ -790,7 +815,15 @@ ul.footer__social {
     margin-left: 25px;
     margin-right: 0;
   }
+
+  .team__items,
+  .pricing__items,
+  .clients__list {
+    gap: 20px;
+  }
 }
+
+
 
 @media (max-width: 992px) {
   .expertise__inner {
@@ -837,7 +870,35 @@ ul.footer__social {
   .portfolio__content {
     column-count: 3;
   }
+
+  .feedback {
+    background-image: none;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .footer__top {
+    padding-top: 75px;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  ul.footer__social {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .footer__social-list {
+    width: 33.333%;
+    margin-bottom: 25px;
+  }
 }
+
+
 
 @media (max-width: 768px) {
   .menu__list {
@@ -953,6 +1014,54 @@ ul.footer__social {
     width: 50%;
     margin-bottom: 40px;
   }
+
+  .slider-blog__item {
+    padding: 40px 0;
+  }
+
+  .slider-blog__item-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  ul.slick-dots {
+    margin-left: 0;
+  }
+
+  .pricing__items {
+    display: block;
+  }
+
+  ul.pricing__item {
+    margin: 0 auto 25px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .clients__list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .clients__list li {
+    margin-bottom: 25px;
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .team__items {
+    display: block;
+  }
+
+  .team__item {
+    margin-bottom: 25px;
+  }
+
+  .team__item img {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 440px) {
@@ -978,6 +1087,10 @@ ul.footer__social {
 
   .portfolio__numbers-item {
     width: 100px;
+  }
+
+  .footer__social-list {
+    width: 50%;
   }
 }
 
