@@ -775,14 +775,16 @@ ul.footer__social {
     display: block;
   }
 
-  .about__title {
+  .about__title,
+  .team__title {
     margin-bottom: 50px;
   }
 
   .about,
   .expertise,
   .portfolio,
-  .slider-blog {
+  .slider-blog,
+  .team {
     padding: 75px 0;
   }
 
@@ -806,6 +808,10 @@ ul.footer__social {
   .portfolio-btn {
     margin-left: 25px;
     margin-right: 0;
+  }
+
+  .team__items {
+    gap: 20px;
   }
 }
 
@@ -984,6 +990,21 @@ ul.footer__social {
     margin-left: 0;
   }
 }
+
+@media (max-width: 640px) {
+  .team__items {
+    display: block;
+  }
+
+  .team__item {
+    margin-bottom: 25px;
+  }
+
+  .team__item img {
+    margin: 0 auto;
+  }
+}
+
 
 @media (max-width: 440px) {
   .header__title {
