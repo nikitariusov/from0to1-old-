@@ -922,10 +922,11 @@ li.pricing__item-num {
 
   .pricing__title {
     margin-bottom: 100px;
+    text-align: center;
   }
 
   .pricing__title::before {
-    right: 35px;
+    right: 0;
     top: 25px;
   }
 
