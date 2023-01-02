@@ -412,6 +412,7 @@ font-family: 'Roboto Condensed', sans-serif; */
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  justify-content: center;
 }
 
 .gallery__content-item {
@@ -813,6 +814,15 @@ li.pricing__item-num {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .gallery__link-btn {
+    margin-bottom: 70px;
+  }
+
+  .blockquote,
+  .gallery__video {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -841,7 +851,7 @@ li.pricing__item-num {
   }
 
   .school__item {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .item__title {
@@ -857,6 +867,18 @@ li.pricing__item-num {
 
   .info-item__img {
     width: 100%;
+  }
+
+  .motivation {
+    margin-bottom: 0;
+  }
+
+  .gallery__title {
+    margin-bottom: 100px;
+  }
+
+  .blockquote__author {
+    margin-right: 50px;
   }
 }
 
@@ -937,6 +959,12 @@ li.pricing__item-num {
   .col-2 p:nth-child(2) {
     margin-bottom: 20px;
   }
+
+  .gallery__numbers {
+    margin-bottom: 100px;
+    gap: inherit;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 700px) {
@@ -956,8 +984,21 @@ li.pricing__item-num {
 
   .about,
   .school,
-  .motivation__inner {
+  .motivation__inner,
+  .gallery {
     padding: 70px 0 70px;
+  }
+
+  .blockquote__author {
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery__content-item,
+  .gallery__img {
+    width: 100%;
   }
 }
 
@@ -985,6 +1026,27 @@ li.pricing__item-num {
   .motivation__title {
     width: min-content;
   }
+
+  .gallery__filter {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .gallery__btn {
+    margin-bottom: 30px;
+  }
+
+  .gallery__link-btn {
+    width: 250px;
+  }
+
+  .gallery__numbers {
+    flex-wrap: wrap;
+  }
+
+  .numbers__item {
+    width: 50%;
+  }
 }
 
 @media (max-width: 380px) {
@@ -1000,7 +1062,8 @@ li.pricing__item-num {
 
   .about,
   .school,
-  .motivation__inner {
+  .motivation__inner,
+  .gallery {
     padding: 40px 0 40px;
   }
 
@@ -1022,5 +1085,15 @@ li.pricing__item-num {
 
   .item__title h4 {
     font-size: 20px;
+  }
+
+  .gallery__title::before {
+    top: 8px;
+  }
+
+  .gallery__btn {
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 15px;
   }
 }
