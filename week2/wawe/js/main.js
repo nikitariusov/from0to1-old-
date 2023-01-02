@@ -1,7 +1,7 @@
 console.log('js is connect');
 $(function() {
 
-  $('.menu__btn').on('click', function(){
+  $('.menu__btn, a').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active')
   })
 
