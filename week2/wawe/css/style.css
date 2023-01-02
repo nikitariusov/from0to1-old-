@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -612,8 +613,7 @@ ul[class="slick-dots"] {
 }
 
 .pricing {
-  max-height: 100vh;
-  padding: 200px 0 200px;
+  padding: 100px 0 200px;
   background-color: #f8f8f8;
 }
 
