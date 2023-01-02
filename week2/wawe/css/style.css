@@ -837,7 +837,23 @@ li.pricing__item-num {
   .blog__title::before {
     top: 25px;
   }
+
+  .map {
+    height: auto;
+  }
+
+  .contact__title {
+    width: fit-content;
+  }
+
+  .contact__right {
+    padding: 30px 0;
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
 }
+
+
 
 @media (max-width: 1100px) {
   .menu {
@@ -851,7 +867,9 @@ li.pricing__item-num {
   .about,
   .school,
   .motivation__inner,
-  .pricing {
+  .pricing,
+  .map,
+  .contact {
     padding: 100px 0 100px;
   }
 
@@ -911,6 +929,8 @@ li.pricing__item-num {
   }
 
 }
+
+
 
 @media (max-width: 900px) {
   body {
@@ -1020,7 +1040,23 @@ li.pricing__item-num {
     top: 25px;
   }
 
+  .contact__title {
+    margin-bottom: 70px;
+  }
+
+  .contact__info {
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    flex-basis: 100%;
+    padding: 0;
+  }
+
 }
+
+
 
 @media (max-width: 700px) {
   .title {
@@ -1042,7 +1078,9 @@ li.pricing__item-num {
   .motivation__inner,
   .gallery,
   .team__inner,
-  .pricing {
+  .pricing,
+  .map,
+  .contact {
     padding: 70px 0 70px;
   }
 
@@ -1069,6 +1107,8 @@ li.pricing__item-num {
   }
 }
 
+
+
 @media (max-width: 640px) {
   .gallery__content-item,
   .gallery__img {
@@ -1083,7 +1123,13 @@ li.pricing__item-num {
     width: 7px;
     height: 7px;
   }
+
+  .map {
+    display: none;
+  }
 }
+
+
 
 @media (max-width: 550px) {
   .header__title {
@@ -1139,7 +1185,23 @@ li.pricing__item-num {
   ul.pricing__item {
     width: 100%;
   }
+
+  .contact__title {
+    text-align: center;
+    width: 200px;
+  }
+
+  .contact__title::before {
+    top: 50px;
+    right: -20px;
+  }
+
+  .contact__info button {
+    width: 250px;
+  }
 }
+
+
 
 @media (max-width: 380px) {
   .header__title {
@@ -1206,6 +1268,17 @@ li.pricing__item-num {
   }
 
   ul.pricing__item {
-    height: 730px;
+    height: 760px;
+  }
+
+  .contact__title::before {
+    top: 35px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  ul.pricing__item {
+    height: 900px;
   }
 }
