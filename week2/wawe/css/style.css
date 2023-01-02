@@ -503,8 +503,8 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 .blog {
+  max-height: 100vh;
   margin-bottom: 100px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -512,7 +512,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 .blog__title {
-  margin-bottom: 0;
+  margin-bottom: 230px;
 }
 
 .blog__content {
@@ -815,6 +815,10 @@ li.pricing__item-num {
     margin-right: auto;
   }
 
+  .gallery {
+    padding: 100px 0 100px;
+  }
+
   .gallery__link-btn {
     margin-bottom: 70px;
   }
@@ -822,6 +826,14 @@ li.pricing__item-num {
   .blockquote,
   .gallery__video {
     margin-bottom: 100px;
+  }
+
+  .gallery__numbers {
+    margin-bottom: 0;
+  }
+
+  .blog__title::before {
+    top: 25px;
   }
 }
 
@@ -961,9 +973,14 @@ li.pricing__item-num {
   }
 
   .gallery__numbers {
-    margin-bottom: 100px;
     gap: inherit;
     justify-content: space-around;
+  }
+
+  .blog__slider-item-text {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -993,12 +1010,25 @@ li.pricing__item-num {
     margin-right: auto;
     text-align: center;
   }
+
+  .blog__title::before {
+    top: 20px;
+  }
 }
 
 @media (max-width: 640px) {
   .gallery__content-item,
   .gallery__img {
     width: 100%;
+  }
+
+  ul.slick-dots {
+    width: 150px;
+  }
+
+  .slick-dots button {
+    width: 7px;
+    height: 7px;
   }
 }
 
@@ -1046,6 +1076,11 @@ li.pricing__item-num {
 
   .numbers__item {
     width: 50%;
+  }
+
+  .blog__slider-title {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
