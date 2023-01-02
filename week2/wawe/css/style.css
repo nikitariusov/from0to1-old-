@@ -580,7 +580,7 @@ ul[class="slick-dots"] {
 }
 
 .team__inner {
-  height: 100vh;
+  max-height: 100vh;
   padding-bottom: 200px;
   padding-top: 100px;
   display: flex;
@@ -590,10 +590,11 @@ ul[class="slick-dots"] {
 }
 
 .team__items {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 105px;
+  gap: 15px;
 }
 
 .team__item {
@@ -881,7 +882,8 @@ li.pricing__item-num {
     width: 100%;
   }
 
-  .motivation {
+  .motivation,
+  .blog {
     margin-bottom: 0;
   }
 
@@ -892,6 +894,7 @@ li.pricing__item-num {
   .blockquote__author {
     margin-right: 50px;
   }
+
 }
 
 @media (max-width: 900px) {
@@ -1002,7 +1005,8 @@ li.pricing__item-num {
   .about,
   .school,
   .motivation__inner,
-  .gallery {
+  .gallery,
+  .team__inner {
     padding: 70px 0 70px;
   }
 
@@ -1013,6 +1017,15 @@ li.pricing__item-num {
 
   .blog__title::before {
     top: 20px;
+  }
+
+  .team__items {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .team__img {
+    width: 370px;
   }
 }
 
