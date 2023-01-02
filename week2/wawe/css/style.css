@@ -1206,6 +1206,16 @@ li.pricing__item-num {
   .contact__info button {
     width: 250px;
   }
+
+  .team__title::before {
+    top: 28px;
+    right: -35px;
+  }
+
+  .pricing__title::before {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 
