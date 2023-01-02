@@ -412,6 +412,7 @@ font-family: 'Roboto Condensed', sans-serif; */
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  justify-content: center;
 }
 
 .gallery__content-item {
@@ -502,8 +503,8 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 .blog {
+  max-height: 100vh;
   margin-bottom: 100px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -511,7 +512,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 .blog__title {
-  margin-bottom: 0;
+  margin-bottom: 230px;
 }
 
 .blog__content {
@@ -579,7 +580,7 @@ ul[class="slick-dots"] {
 }
 
 .team__inner {
-  height: 100vh;
+  max-height: 100vh;
   padding-bottom: 200px;
   padding-top: 100px;
   display: flex;
@@ -589,10 +590,11 @@ ul[class="slick-dots"] {
 }
 
 .team__items {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 105px;
+  gap: 15px;
 }
 
 .team__item {
@@ -610,7 +612,7 @@ ul[class="slick-dots"] {
 }
 
 .pricing {
-  height: 100vh;
+  max-height: 100vh;
   padding: 200px 0 200px;
   background-color: #f8f8f8;
 }
@@ -634,6 +636,7 @@ ul[class="slick-dots"] {
 .pricing__items {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 ul.pricing__item {
@@ -813,7 +816,45 @@ li.pricing__item-num {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .gallery {
+    padding: 100px 0 100px;
+  }
+
+  .gallery__link-btn {
+    margin-bottom: 70px;
+  }
+
+  .blockquote,
+  .gallery__video {
+    margin-bottom: 100px;
+  }
+
+  .gallery__numbers {
+    margin-bottom: 0;
+  }
+
+  .blog__title::before {
+    top: 25px;
+  }
+
+  .map {
+    height: fit-content;
+    margin: 70px 0;
+  }
+
+  .contact__title {
+    width: fit-content;
+  }
+
+  .contact__right {
+    padding: 30px 0;
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
 }
+
+
 
 @media (max-width: 1100px) {
   .menu {
@@ -826,7 +867,10 @@ li.pricing__item-num {
 
   .about,
   .school,
-  .motivation__inner {
+  .motivation__inner,
+  .pricing,
+  .map,
+  .contact {
     padding: 100px 0 100px;
   }
 
@@ -841,7 +885,7 @@ li.pricing__item-num {
   }
 
   .school__item {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .item__title {
@@ -858,7 +902,41 @@ li.pricing__item-num {
   .info-item__img {
     width: 100%;
   }
+
+  .motivation,
+  .blog {
+    margin-bottom: 0;
+  }
+
+  .gallery__title {
+    margin-bottom: 100px;
+  }
+
+  .blockquote__author {
+    margin-right: 50px;
+  }
+
+  ul.pricing__item {
+    height: 650px;
+  }
+
+  .pricing__title {
+    margin-bottom: 100px;
+  }
+
+  .pricing__title::before {
+    right: 35px;
+    top: 25px;
+  }
+
+  .footer {
+    padding: 30px 0;
+    height: 120px;
+  }
+
 }
+
+
 
 @media (max-width: 900px) {
   body {
@@ -937,7 +1015,54 @@ li.pricing__item-num {
   .col-2 p:nth-child(2) {
     margin-bottom: 20px;
   }
+
+  .gallery__numbers {
+    gap: inherit;
+    justify-content: space-around;
+  }
+
+  .blog__slider-item-text {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .pricing {
+    height: auto;
+    max-height: none;
+  }
+
+  .pricing__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.pricing__item {
+    width: 450px;
+  }
+
+  .pricing__title::before {
+    right: 70px;
+    top: 25px;
+  }
+
+  .contact__title {
+    margin-bottom: 70px;
+  }
+
+  .contact__info {
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    flex-basis: 100%;
+    padding: 0;
+  }
+
 }
+
+
 
 @media (max-width: 700px) {
   .title {
@@ -956,10 +1081,61 @@ li.pricing__item-num {
 
   .about,
   .school,
-  .motivation__inner {
+  .motivation__inner,
+  .gallery,
+  .team__inner,
+  .pricing,
+  .map,
+  .contact {
     padding: 70px 0 70px;
   }
+
+  .blockquote__author {
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .blog__title::before {
+    top: 20px;
+  }
+
+  .team__inner {
+    max-height: none;
+  }
+
+  .team__items {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .team__img {
+    width: 370px;
+  }
 }
+
+
+
+@media (max-width: 640px) {
+  .gallery__content-item,
+  .gallery__img {
+    width: 100%;
+  }
+
+  ul.slick-dots {
+    width: 150px;
+  }
+
+  .slick-dots button {
+    width: 7px;
+    height: 7px;
+  }
+
+  .map {
+    display: none;
+  }
+}
+
+
 
 @media (max-width: 550px) {
   .header__title {
@@ -985,7 +1161,53 @@ li.pricing__item-num {
   .motivation__title {
     width: min-content;
   }
+
+  .gallery__filter {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .gallery__btn {
+    margin-bottom: 30px;
+  }
+
+  .gallery__link-btn {
+    width: 250px;
+  }
+
+  .gallery__numbers {
+    flex-wrap: wrap;
+  }
+
+  .numbers__item {
+    width: 50%;
+  }
+
+  .blog__slider-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  ul.pricing__item {
+    width: 100%;
+  }
+
+  .contact__title {
+    text-align: center;
+    width: 200px;
+  }
+
+  .contact__title::before {
+    top: 50px;
+    right: -20px;
+  }
+
+  .contact__info button {
+    width: 250px;
+  }
 }
+
+
 
 @media (max-width: 380px) {
   .header__title {
@@ -1000,7 +1222,10 @@ li.pricing__item-num {
 
   .about,
   .school,
-  .motivation__inner {
+  .motivation__inner,
+  .gallery,
+  .pricing,
+  .blog {
     padding: 40px 0 40px;
   }
 
@@ -1022,5 +1247,56 @@ li.pricing__item-num {
 
   .item__title h4 {
     font-size: 20px;
+  }
+
+  .gallery__title::before {
+    top: 8px;
+  }
+
+  .gallery__btn {
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .team__title::before {
+    top: 0;
+  }
+
+  .pricing__title {
+    text-align: center;
+    width: 200px;
+  }
+
+  .pricing__title::before {
+    top: 5px;
+    right: -25px;
+  }
+
+  ul.pricing__item {
+    height: 760px;
+  }
+
+  .contact__title::before {
+    top: 35px;
+    right: 10px;
+  }
+
+  .contact__text {
+    width: auto;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .social__item {
+    margin: 15px 15px;
+  }
+}
+
+
+
+@media (max-width: 300px) {
+  ul.pricing__item {
+    height: 900px;
   }
 }
