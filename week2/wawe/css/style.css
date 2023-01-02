@@ -839,7 +839,8 @@ li.pricing__item-num {
   }
 
   .map {
-    height: auto;
+    height: fit-content;
+    margin: 70px 0;
   }
 
   .contact__title {
