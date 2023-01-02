@@ -612,7 +612,7 @@ ul[class="slick-dots"] {
 }
 
 .pricing {
-  height: 100vh;
+  max-height: 100vh;
   padding: 200px 0 200px;
   background-color: #f8f8f8;
 }
@@ -636,6 +636,7 @@ ul[class="slick-dots"] {
 .pricing__items {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 ul.pricing__item {
@@ -849,7 +850,8 @@ li.pricing__item-num {
 
   .about,
   .school,
-  .motivation__inner {
+  .motivation__inner,
+  .pricing {
     padding: 100px 0 100px;
   }
 
@@ -893,6 +895,19 @@ li.pricing__item-num {
 
   .blockquote__author {
     margin-right: 50px;
+  }
+
+  ul.pricing__item {
+    height: 650px;
+  }
+
+  .pricing__title {
+    margin-bottom: 100px;
+  }
+
+  .pricing__title::before {
+    right: 35px;
+    top: 25px;
   }
 
 }
@@ -985,6 +1000,26 @@ li.pricing__item-num {
     text-align: center;
     margin-left: 0;
   }
+
+  .pricing {
+    height: auto;
+    max-height: none;
+  }
+
+  .pricing__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.pricing__item {
+    width: 450px;
+  }
+
+  .pricing__title::before {
+    right: 70px;
+    top: 25px;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -1006,7 +1041,8 @@ li.pricing__item-num {
   .school,
   .motivation__inner,
   .gallery,
-  .team__inner {
+  .team__inner,
+  .pricing {
     padding: 70px 0 70px;
   }
 
@@ -1017,6 +1053,10 @@ li.pricing__item-num {
 
   .blog__title::before {
     top: 20px;
+  }
+
+  .team__inner {
+    max-height: none;
   }
 
   .team__items {
@@ -1095,6 +1135,10 @@ li.pricing__item-num {
     font-size: 32px;
     line-height: 40px;
   }
+
+  ul.pricing__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 380px) {
@@ -1111,7 +1155,9 @@ li.pricing__item-num {
   .about,
   .school,
   .motivation__inner,
-  .gallery {
+  .gallery,
+  .pricing,
+  .blog {
     padding: 40px 0 40px;
   }
 
@@ -1143,5 +1189,23 @@ li.pricing__item-num {
     font-size: 19px;
     line-height: 24px;
     margin-bottom: 15px;
+  }
+
+  .team__title::before {
+    top: 0;
+  }
+
+  .pricing__title {
+    text-align: center;
+    width: 200px;
+  }
+
+  .pricing__title::before {
+    top: 5px;
+    right: -25px;
+  }
+
+  ul.pricing__item {
+    height: 780px;
   }
 }
