@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
@@ -157,13 +158,8 @@
   }
   
   &__form-btn {
+    @extend %btn;
     border: none;
-    background-color: $accent;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 12px 24px;
-    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-    cursor: pointer;
   }
 }
 
@@ -180,5 +176,91 @@
     vertical-align: middle;
   }
 }
+
+.top-slider {
+  background-image: url('../images/top-slider-bg.png');
+  background-color: $bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 65px 0 44px;
+
+  &__container {
+    max-width: 1560px;
+  }
+
+  &__content {
+    padding-left: 175px;
+    padding-top: 125px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 670px;
+    margin-bottom: 35px;
+    font-size: 58px;
+    line-height: 68px;
+    color: $title;
+    @extend %roboto-700;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    max-width: 470px;
+  } 
+
+  &__link {
+    @extend %btn;
+    padding: 12px 35px;
+  }
+
+  .slick-dots {
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 0 5px;
+      line-height: 0;
+      button{
+        padding: 0;
+        font-size: 0;
+        background-color: transparent;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $default;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &.slick-active {
+        button{
+          border-color: $accent;
+          &::before {
+            background-color: $accent;
+          }
+        }
+      }
+    }
+  }
+}
+
+//? font body info
+//? color: #8d8d8d;
+//? font-size: 16px;
+//? line-height: 26px;
+//? @extend %quicksand-500;
 
 @import "media";

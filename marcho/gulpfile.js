@@ -39,7 +39,9 @@ function styles() {
 
 function scripts() {
   return gulp
-    .src(["./node_modules/jquery/dist/jquery.min.js", mainJsFile])
+    .src(["./node_modules/jquery/dist/jquery.min.js",
+      './node_modules/slick-carousel/slick/slick.min.js',
+      mainJsFile])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("./app/js"))
