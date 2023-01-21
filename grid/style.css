@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  counter-reset: list;
+}
+
+.item {
+  background-color: #009070;
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 700;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.item:nth-child(even) {
+  background-color: #00cca0;
+}
+
+.item::before {
+   content: counter(list);
+   counter-increment: list;
+}
+
+.box {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  
+}
+
+
+.item:nth-child(1) {
+  grid-column: span 2;
+}
+
+.item:nth-child(4) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
