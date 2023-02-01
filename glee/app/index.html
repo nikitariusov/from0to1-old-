@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
-</head>
-<body>
-
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <svg
-          width="51px" height="39px">
-          <path fill="rgb(163, 187, 200)"
-          d="M49.727,38.647 C49.322,38.976 48.824,38.859 48.819,38.859 L0.778,29.61 C0.764,29.57 0.397,28.985 0.156,28.674 C0.82,28.362 0.0,28.7 0.89,27.826 C0.177,27.646 6.501,14.894 6.672,14.569 C6.843,14.244 7.47,14.182 7.179,14.117 L42.372,0.67 C42.372,0.67 42.943,0.119 43.338,0.118 C43.734,0.358 43.786,0.762 43.786,0.763 L50.37,37.842 C50.37,37.842 50.131,38.318 49.727,38.647 ZM43.476,35.947 L22.949,24.537 L5.426,28.187 L43.476,35.947 ZM45.742,35.109 L36.31,21.806 L25.693,23.964 L45.742,35.109 ZM2.735,26.924 L20.568,23.209 L8.47,16.227 L2.735,26.924 ZM9.709,15.55 L23.310,22.639 L35.681,20.55 L41.240,2.468 L9.709,15.55 ZM42.487,5.132 L37.584,20.653 L47.363,34.50 L42.487,5.132 Z"/>
-          </svg>
-          <span class="logo__text">Glee.</span>
-        </a>
-        <nav class="menu">
-          
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <svg width="51px" height="39px">
+              <path
+                fill="rgb(163, 187, 200)"
+                d="M49.727,38.647 C49.322,38.976 48.824,38.859 48.819,38.859 L0.778,29.61 C0.764,29.57 0.397,28.985 0.156,28.674 C0.82,28.362 0.0,28.7 0.89,27.826 C0.177,27.646 6.501,14.894 6.672,14.569 C6.843,14.244 7.47,14.182 7.179,14.117 L42.372,0.67 C42.372,0.67 42.943,0.119 43.338,0.118 C43.734,0.358 43.786,0.762 43.786,0.763 L50.37,37.842 C50.37,37.842 50.131,38.318 49.727,38.647 ZM43.476,35.947 L22.949,24.537 L5.426,28.187 L43.476,35.947 ZM45.742,35.109 L36.31,21.806 L25.693,23.964 L45.742,35.109 ZM2.735,26.924 L20.568,23.209 L8.47,16.227 L2.735,26.924 ZM9.709,15.55 L23.310,22.639 L35.681,20.55 L41.240,2.468 L9.709,15.55 ZM42.487,5.132 L37.584,20.653 L47.363,34.50 L42.487,5.132 Z"
+              />
+            </svg>
+            <span class="logo__text">Glee.</span>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Home+</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Page+</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">News</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <a class="user-nav__link search-icon" href="#">
+              <img src="images/icons/search.svg" alt="search images">
+            </a>
+            <div class="user-nav__block">
+              <a class="user-nav__link user-nav__block--left-btn" href="#">
+                <img src="images/icons/like.svg" alt="search images">
+                <span class="user-nav__num">0</span>
+              </a>
+              <a class="user-nav__link user-nav__block--right-btn" href="#">
+                <img src="images/icons/backet.svg" alt="search images">
+                <span class="user-nav__num">0</span>
+              </a>
+            </div>
+            <a class="user-nav__link user-menu-icon" href="#">
+              <img src="images/icons/user-menu.svg" alt="search images">
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
-  
-  <script src="js/main.min.js"></script>
-</body>
+    </header>
+
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
