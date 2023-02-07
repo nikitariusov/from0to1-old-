@@ -11,3 +11,5 @@ build/
 dist/
 */app/css/*
 */app/js/*.min.js
+
+*.ttf
