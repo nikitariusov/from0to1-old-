@@ -9,7 +9,4 @@ package-lock.json
 node_modules/
 build/
 dist/
-*/app/css/*
-*/app/js/*.min.js
-
 *.ttf
