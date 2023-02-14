@@ -3,7 +3,13 @@
 .idea/*
 .vscode/
 *.sublime*
-build/
-node_modules/
 npm-debug.*
+
+package-lock.json
+node_modules/
+build/
 dist/
+*/app/css/*
+*/app/js/*.min.js
+
+*.ttf
