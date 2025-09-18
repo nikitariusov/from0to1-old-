@@ -1,4 +1,4 @@
-https://nikitariusov.github.io/from0to1
+https://nikitariusov.github.io/from0to1-old-
 
 
 Projects
